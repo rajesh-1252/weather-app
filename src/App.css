@@ -1,38 +1,54 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: auto;
+  background-image: url(./img/sky.jpeg);
+
+  background-size: cover;
+}
+
+.card-container {
+  display: grid;
+  place-items: center;
+  /* height: 70vh;
+  margin: 130px 40px;
+  background-color: #fff;
+  padding: 70px 0;
+  text-align: center; */
+}
+.card {
+  margin: 130px 40px;
+  background-color: #fff;
+  padding: 70px 5px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temperature {
+  padding-top: 20px;
+  margin-right: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search input {
+  font-size: 20px;
+  width: 60%;
+  padding-left: 5px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weatherIcon {
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 90px;
+  color: black;
+  background-color: skyblue;
 }

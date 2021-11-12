@@ -1,0 +1,2 @@
+ <DisplayWeater data = {data} cityname = {cityname}  loading = {loading} getQuery = {(q) => setCityname(q)} />
+ 
